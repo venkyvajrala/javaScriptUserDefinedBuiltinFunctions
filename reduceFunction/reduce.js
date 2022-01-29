@@ -1,18 +1,11 @@
-function reduce(inputNumbersArray,callBackFunction,startIndex=0)
-{
-
-    finalResult=0;
-    for(let index=startIndex;index<inputNumbersArray.length;index++)
-    {
-        let currentValue=inputNumbersArray[index];
-        finalResult=callBackFunction(finalResult,currentValue);
-        
-
-    }
-    return finalResult;
-
+function reduce(inputNumbersArray, callBackFunction, startIndex = 0) {
+	finalResult = 0;
+	for (let index = startIndex; index < inputNumbersArray.length; index++) {
+		let currentValue = inputNumbersArray[index];
+		finalResult = callBackFunction(finalResult, currentValue);
+	}
+	return finalResult;
 }
-
 
 // function getSum(total,num)
 // {

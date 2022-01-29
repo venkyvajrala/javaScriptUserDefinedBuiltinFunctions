@@ -1,13 +1,8 @@
-function forEach(inputNumbersArray,callBackFunction,startIndex=0)
-{
-    
-    for(let index=startIndex;index<inputNumbersArray.length;index++)
-    {
-            callBackFunction(inputNumbersArray[index],index,inputNumbersArray);
-
-    }
+function forEach(inputNumbersArray, callBackFunction, startIndex = 0) {
+	for (let index = startIndex; index < inputNumbersArray.length; index++) {
+		callBackFunction(inputNumbersArray[index], index, inputNumbersArray);
+	}
 }
-
 
 // test case 1
 // sum=0;
@@ -20,7 +15,6 @@ function forEach(inputNumbersArray,callBackFunction,startIndex=0)
 // forEach([1,2,3,4,5],myFunction);
 
 // console.log(sum);
-
 
 // testcase 2
 // numbers=[1,2,3,4,5,6];
